@@ -1,0 +1,316 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Jun  2 19:11:53 2023
+# Process ID: 22396
+# Current directory: C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.runs/synth_1
+# Command line: vivado.exe -log Nexys4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4.tcl
+# Log file: C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.runs/synth_1/Nexys4.vds
+# Journal file: C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.runs/synth_1\vivado.jou
+# Running On: DESKTOP-BLEHP1T, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 8366 MB
+#-----------------------------------------------------------
+source Nexys4.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/utils_1/imports/synth_1/Nexys4.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/utils_1/imports/synth_1/Nexys4.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Nexys4 -part xc7a75tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10564
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Nexys4.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Debouncer.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Debouncer.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Timer.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Timer.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'SpeedController' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SpeedController.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'SpeedController' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SpeedController.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'FreqDivider' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FreqDivider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'FreqDivider' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FreqDivider.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:45]
+WARNING: [Synth 8-614] signal 'selection' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:45]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:140]
+WARNING: [Synth 8-614] signal 'finishP1' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:140]
+WARNING: [Synth 8-614] signal 'finishP2' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:140]
+WARNING: [Synth 8-614] signal 'timerP1' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:140]
+WARNING: [Synth 8-614] signal 'timerP2' is read in the process but is not in the sensitivity list [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4' (0#1) [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/Nexys4.vhd:52]
+WARNING: [Synth 8-3848] Net led in module/entity FSM does not have driver. [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:47]
+WARNING: [Synth 8-3848] Net enableP2 in module/entity FSM does not have driver. [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:61]
+WARNING: [Synth 8-3848] Net enableP1 in module/entity FSM does not have driver. [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/FSM.vhd:60]
+WARNING: [Synth 8-7129] Port led[1] in module FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnC in module FSM is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1955.855 ; gain = 25.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1973.789 ; gain = 43.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1973.789 ; gain = 43.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1973.789 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/constrs_1/new/Nexys4.xdc]
+Finished Parsing XDC File [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/constrs_1/new/Nexys4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/constrs_1/new/Nexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2086.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2086.484 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'en_reg' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 4     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   8 Input   29 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[6] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[5] driven by constant 1
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[4] driven by constant 1
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[3] driven by constant 1
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[2] driven by constant 1
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[1] driven by constant 1
+WARNING: [Synth 8-3917] design Nexys4 has port CAT[0] driven by constant 1
+WARNING: [Synth 8-7129] Port LED[1] in module Nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[0] in module Nexys4 is either unconnected or has no load
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer2/an_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \FSM/SSDPlayer1/an_reg[7]  is always disabled
+WARNING: [Synth 8-3332] Sequential element (FSM/SSDPlayer1/en_reg) is unused and will be removed from module Nexys4.
+WARNING: [Synth 8-3332] Sequential element (FSM/SSDPlayer2/en_reg) is unused and will be removed from module Nexys4.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[7] with 1st driver pin 'FSM/SSDPlayer1/an_reg[7]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[7] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[7]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[6] with 1st driver pin 'FSM/SSDPlayer1/an_reg[6]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[6] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[6]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[5] with 1st driver pin 'FSM/SSDPlayer1/an_reg[5]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[5] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[5]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[4] with 1st driver pin 'FSM/SSDPlayer1/an_reg[4]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[4] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[4]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[3] with 1st driver pin 'FSM/SSDPlayer1/an_reg[3]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[3] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[3]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[2] with 1st driver pin 'FSM/SSDPlayer1/an_reg[2]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[2] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[2]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[1] with 1st driver pin 'FSM/SSDPlayer1/an_reg[1]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[1] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[1]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[0] with 1st driver pin 'FSM/SSDPlayer1/an_reg[0]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin AN_OBUF[0] with 2nd driver pin 'FSM/SSDPlayer2/an_reg[0]/Q' [C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.srcs/sources_1/new/SSD.vhd:64]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LD    |    16|
+|2     |OBUF  |    15|
+|3     |OBUFT |     2|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2086.484 ; gain = 43.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.484 ; gain = 156.551
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2086.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2086.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+Synth Design complete, checksum: 7173940b
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 58 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2086.484 ; gain = 156.551
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tmiha/Desktop/DanciPatricia/DanciPatricia.runs/synth_1/Nexys4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Nexys4_utilization_synth.rpt -pb Nexys4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  2 19:12:30 2023...
