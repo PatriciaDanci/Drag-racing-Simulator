@@ -2,6 +2,7 @@ Drag Race Simulator 🏎️💨
 
 Welcome to the Drag Race Simulator! This project is a simulation of a drag race implemented in VHDL using Vivado and tested on the Nexys A7 Artix-7 FPGA board.
 
+
 Overview:
 
 The Drag Race Simulator replicates the exhilarating experience of a drag race, where two vehicles compete to reach the finish line first. The simulation provides a realistic representation of acceleration, speed, and timing.
