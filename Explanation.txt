@@ -1,0 +1,20 @@
+
+Race Progression Control 🏁:
+The FSM governs the flow of the race, transitioning between different states based on various conditions and inputs. Here's a simplified explanation of how it works:
+
+Idle State: Initially, the system is in the idle state, waiting for the race to start. 🕒
+Player 1 State: Upon pressing the start button (btnC), the FSM transitions to the Player 1 state. Here, the first player prepares for the race by adjusting their car's speed using the up and down buttons (btnU, btnD). 🏎️
+Race 1 State: After Player 1 finishes adjusting their car's speed and presses the start button again, the FSM transitions to the Race 1 state. In this state, Player 1's car starts moving, and a timer begins counting the elapsed time. 🚗⏱️
+Player 2 State: Once Player 1's car crosses the finish line (a simulated event), the FSM transitions to the Player 2 state. Here, the second player follows a similar process of adjusting their car's speed. 🏎️
+Race 2 State: After Player 2's preparations, the FSM enters the Race 2 state. Player 2's car begins moving, and another timer starts counting the elapsed time. 🚗⏱️
+Winner State: When Player 2's car crosses the finish line, the FSM transitions to the Winner state. Here, the system determines the winner based on the elapsed times of both players. The winner is then displayed on the LED indicators. 🏆
+
+Winner Determination 🥇:
+The FSM uses a comparative approach to determine the winner. Once both players have finished their respective races, the FSM checks the elapsed times recorded by the timers for each player. The player with the shorter elapsed time is declared the winner. If both players have the same elapsed time, the race is declared a tie. 🏁
+
+How It Works on the Board 🕹️:
+Initialization: When the FPGA board is powered on, the FSM initializes in the Idle state. ⚡
+User Interaction: Users interact with the system by pressing buttons to control their car's speed and start the race. 🎮
+Race Simulation: As the race progresses, the FSM manages the timing and progression of the race, updating the display to reflect the current state. 🏎️🔄
+Winner Determination: Once both players have completed the race, the FSM analyzes the recorded times and determines the winner. 🏅
+Output: The result of the race (winner or tie) is displayed on the LED indicators for users to see. 💡
