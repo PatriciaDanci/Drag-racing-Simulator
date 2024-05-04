@@ -25,15 +25,15 @@ Implementation Details:
 
 Usage:
 
-Connect the Nexys A7 FPGA board to your computer.
+~Connect the Nexys A7 FPGA board to your computer.
 
-Upload the project files to Vivado IDE.
+~Upload the project files to Vivado IDE.
 
-Synthesize and implement the design.
+~Synthesize and implement the design.
 
-Connect the FPGA board to a monitor or display for visual output.
+~Connect the FPGA board to a monitor or display for visual output.
 
-Start the simulation and enjoy the drag race experience!
+~Start the simulation and enjoy the drag race experience!
 
 Documentation:
 For detailed instructions on setting up and running the simulation, please refer to the DRAG RACE SIMULATOR.docx document.
