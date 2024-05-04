@@ -36,7 +36,7 @@ Usage:
 ~Start the simulation and enjoy the drag race experience!
 
 Documentation:
-For detailed instructions on setting up and running the simulation, please refer to the DRAG RACE SIMULATOR.docx document.
+For detailed instructions on setting up and running the simulation, please refer to the DRAG RACE SIMULATOR.docx document, as well as Explanation.txt for a better understanding of this project.
 
 Technologies Used:
 VHDL (VHSIC Hardware Description Language),
